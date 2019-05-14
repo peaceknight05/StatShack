@@ -35,10 +35,6 @@
                                     <segue destination="7vm-TL-phb" kind="show" id="UOZ-sZ-uwO"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomePage.png" translatesAutoresizingMaskIntoConstraints="NO" id="BPK-Tt-UMC">
-                                <rect key="frame" x="16" y="89" width="343" height="195"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wf-vm-eGa">
                                 <rect key="frame" x="16" y="366" width="343" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -56,6 +52,10 @@
                                     <segue destination="ZGm-9a-PyW" kind="show" id="yII-2f-Bom"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="fAr-qV-e0o">
+                                <rect key="frame" x="16" y="64" width="343" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -173,7 +173,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HomePage.png" width="1201" height="683"/>
+        <image name="HomeScreen.png" width="1201" height="683"/>
         <image name="Screenshot 2019-05-08 at 12.59.45 PM.png" width="1188" height="681"/>
     </resources>
 </document>
