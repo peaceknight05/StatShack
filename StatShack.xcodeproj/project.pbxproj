@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CF94419228A684800AF62CC /* HomePage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF94418228A684800AF62CC /* HomePage.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
 		C97B26932281233E00DC36B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26922281233E00DC36B2 /* ViewController.swift */; };
 		C97B26962281233E00DC36B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97B26942281233E00DC36B2 /* Main.storyboard */; };
 		C97B26982281234000DC36B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97B26972281234000DC36B2 /* Assets.xcassets */; };
 		C97B269B2281234000DC36B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97B26992281234000DC36B2 /* LaunchScreen.storyboard */; };
+		C97B26A52282950800DC36B2 /* PreviousStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26A42282950800DC36B2 /* PreviousStatsVC.swift */; };
+		C97B26A72282990700DC36B2 /* HandballScoreCounterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26A62282990700DC36B2 /* HandballScoreCounterVC.swift */; };
+		C97B26A9228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = C97B26A8228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CF94418228A684800AF62CC /* HomePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomePage.png; path = StatShack/Photos/HomePage.png; sourceTree = "<group>"; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97B26902281233E00DC36B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97B26922281233E00DC36B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		C97B26972281234000DC36B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C97B269A2281234000DC36B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97B269C2281234000DC36B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C97B26A42282950800DC36B2 /* PreviousStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousStatsVC.swift; sourceTree = "<group>"; };
+		C97B26A62282990700DC36B2 /* HandballScoreCounterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandballScoreCounterVC.swift; sourceTree = "<group>"; };
+		C97B26A8228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-08 at 12.59.45 PM.png"; path = "StatShack/Photos/Screenshot 2019-05-08 at 12.59.45 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,8 @@
 			children = (
 				C97B268F2281233E00DC36B2 /* StatShack */,
 				C97B268E2281233E00DC36B2 /* Products */,
+				8CF94418228A684800AF62CC /* HomePage.png */,
+				C97B26A8228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +70,8 @@
 				C97B26972281234000DC36B2 /* Assets.xcassets */,
 				C97B26992281234000DC36B2 /* LaunchScreen.storyboard */,
 				C97B269C2281234000DC36B2 /* Info.plist */,
+				C97B26A42282950800DC36B2 /* PreviousStatsVC.swift */,
+				C97B26A62282990700DC36B2 /* HandballScoreCounterVC.swift */,
 			);
 			path = StatShack;
 			sourceTree = "<group>";
@@ -123,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97B269B2281234000DC36B2 /* LaunchScreen.storyboard in Resources */,
+				8CF94419228A684800AF62CC /* HomePage.png in Resources */,
+				C97B26A9228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png in Resources */,
 				C97B26982281234000DC36B2 /* Assets.xcassets in Resources */,
 				C97B26962281233E00DC36B2 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97B26A52282950800DC36B2 /* PreviousStatsVC.swift in Sources */,
 				C97B26932281233E00DC36B2 /* ViewController.swift in Sources */,
+				C97B26A72282990700DC36B2 /* HandballScoreCounterVC.swift in Sources */,
 				C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

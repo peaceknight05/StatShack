@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  StatShack
 //
-//  Created by Santhiyaa Senthilkumar on 7/5/19.
-//  Copyright © 2019 Santhiyaa Senthilkumar. All rights reserved.
+//  Created by Santhiyaa Senthilkumar and Jonathan Tan Jiayi on 7/5/19.
+//  Copyright © 2019 Santhiyaa Senthilkumar and Jonathan Tan Jiayi. All rights reserved.
 //
 
 import UIKit
