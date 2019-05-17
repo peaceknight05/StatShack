@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		603574D8228A719300127673 /* HomeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574D7228A719300127673 /* HomeScreen.png */; };
+		603574E2228E673300127673 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E1228E673200127673 /* logo.png */; };
+		603574E5228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E3228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png */; };
+		603574E6228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		603574D7228A719300127673 /* HomeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomeScreen.png; path = StatShack/Photos/HomeScreen.png; sourceTree = "<group>"; };
+		603574E1228E673200127673 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = StatShack/Photos/logo.png; sourceTree = "<group>"; };
+		603574E3228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-17 at 11.57.57 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-17 at 11.57.57 AM.png"; sourceTree = "<group>"; };
+		603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-17 at 11.58.05 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-17 at 11.58.05 AM.png"; sourceTree = "<group>"; };
 		8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.35.01 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.35.01 AM.png"; sourceTree = "<group>"; };
 		8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.25.32 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.25.32 AM.png"; sourceTree = "<group>"; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +58,9 @@
 			children = (
 				C97B268F2281233E00DC36B2 /* StatShack */,
 				C97B268E2281233E00DC36B2 /* Products */,
+				603574E3228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png */,
+				603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */,
+				603574E1228E673200127673 /* logo.png */,
 				603574D7228A719300127673 /* HomeScreen.png */,
 				C97B26A8228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png */,
 				8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */,
@@ -144,8 +153,11 @@
 				C97B26A9228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png in Resources */,
 				603574D8228A719300127673 /* HomeScreen.png in Resources */,
 				C97B26982281234000DC36B2 /* Assets.xcassets in Resources */,
+				603574E2228E673300127673 /* logo.png in Resources */,
 				8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */,
 				8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */,
+				603574E6228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png in Resources */,
+				603574E5228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png in Resources */,
 				C97B26962281233E00DC36B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
