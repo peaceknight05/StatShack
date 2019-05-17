@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreviousStatsVC: UIViewController {
+class PreviousStatsVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
