@@ -163,7 +163,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2019-05-08 at 12.59.45 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-XU-bJP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2019-05-17 at 11.58.05 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-XU-bJP">
                                 <rect key="frame" x="0.0" y="70" width="1024" height="594"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -222,8 +222,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screenshot 2019-05-08 at 12.59.45 PM.png" width="1188" height="681"/>
         <image name="Screenshot 2019-05-17 at 11.57.57 AM.png" width="770" height="435"/>
+        <image name="Screenshot 2019-05-17 at 11.58.05 AM.png" width="761" height="512"/>
         <image name="logo.png" width="1200" height="1200"/>
     </resources>
 </document>
