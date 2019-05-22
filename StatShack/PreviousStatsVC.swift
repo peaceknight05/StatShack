@@ -9,9 +9,14 @@
 import UIKit
 
 class PreviousStatsVC: UITableViewController {
+    // MARK: var
+
+    @IBOutlet var dataView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        dataView.delegate = self
+        dataView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
