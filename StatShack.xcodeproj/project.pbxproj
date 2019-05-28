@@ -12,6 +12,10 @@
 		603574E5228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E3228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png */; };
 		603574E6228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */; };
 		603574E82293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */; };
+		603574EB229CDE1900127673 /* Screenshot 2019-05-28 at 11.07.52 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E9229CDE1800127673 /* Screenshot 2019-05-28 at 11.07.52 AM.png */; };
+		603574EC229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574EA229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png */; };
+		603574EE229CE38D00127673 /* floorball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 603574ED229CE38D00127673 /* floorball.jpeg */; };
+		603574F0229CE6B200127673 /* soccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 603574EF229CE6B200127673 /* soccer.jpg */; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
@@ -30,6 +34,10 @@
 		603574E3228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-17 at 11.57.57 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-17 at 11.57.57 AM.png"; sourceTree = "<group>"; };
 		603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-17 at 11.58.05 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-17 at 11.58.05 AM.png"; sourceTree = "<group>"; };
 		603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-21 at 11.11.52 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-21 at 11.11.52 AM.png"; sourceTree = "<group>"; };
+		603574E9229CDE1800127673 /* Screenshot 2019-05-28 at 11.07.52 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-28 at 11.07.52 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-28 at 11.07.52 AM.png"; sourceTree = "<group>"; };
+		603574EA229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-28 at 11.09.48 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-28 at 11.09.48 AM.png"; sourceTree = "<group>"; };
+		603574ED229CE38D00127673 /* floorball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = floorball.jpeg; path = Photos/floorball.jpeg; sourceTree = "<group>"; };
+		603574EF229CE6B200127673 /* soccer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = soccer.jpg; path = StatShack/Photos/soccer.jpg; sourceTree = "<group>"; };
 		8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.35.01 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.35.01 AM.png"; sourceTree = "<group>"; };
 		8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.25.32 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.25.32 AM.png"; sourceTree = "<group>"; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +68,9 @@
 			children = (
 				C97B268F2281233E00DC36B2 /* StatShack */,
 				C97B268E2281233E00DC36B2 /* Products */,
+				603574EF229CE6B200127673 /* soccer.jpg */,
+				603574E9229CDE1800127673 /* Screenshot 2019-05-28 at 11.07.52 AM.png */,
+				603574EA229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png */,
 				603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */,
 				603574E3228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png */,
 				603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */,
@@ -90,6 +101,7 @@
 				C97B269C2281234000DC36B2 /* Info.plist */,
 				C97B26A42282950800DC36B2 /* PreviousStatsVC.swift */,
 				C97B26A62282990700DC36B2 /* HandballScoreCounterVC.swift */,
+				603574ED229CE38D00127673 /* floorball.jpeg */,
 			);
 			path = StatShack;
 			sourceTree = "<group>";
@@ -157,10 +169,14 @@
 				603574D8228A719300127673 /* HomeScreen.png in Resources */,
 				C97B26982281234000DC36B2 /* Assets.xcassets in Resources */,
 				603574E2228E673300127673 /* logo.png in Resources */,
+				603574EB229CDE1900127673 /* Screenshot 2019-05-28 at 11.07.52 AM.png in Resources */,
 				8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */,
+				603574EE229CE38D00127673 /* floorball.jpeg in Resources */,
 				8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */,
 				603574E6228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png in Resources */,
 				603574E5228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png in Resources */,
+				603574F0229CE6B200127673 /* soccer.jpg in Resources */,
+				603574EC229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png in Resources */,
 				C97B26962281233E00DC36B2 /* Main.storyboard in Resources */,
 				603574E82293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png in Resources */,
 			);
