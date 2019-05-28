@@ -17,7 +17,7 @@ class PreviousStatsVC: UITableViewController {
         super.viewDidLoad()
         dataView.delegate = self
         dataView.dataSource = self
-        // Do any additional setup after loading the view.
+        self.title = "Previous Stats"
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
