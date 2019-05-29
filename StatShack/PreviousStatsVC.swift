@@ -17,7 +17,7 @@ class PreviousStatsVC: UITableViewController {
         super.viewDidLoad()
         dataView.delegate = self
         dataView.dataSource = self
-        self.title = "Previous Stats"
+        self.navigationItem.title = "Previous Stats"
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
