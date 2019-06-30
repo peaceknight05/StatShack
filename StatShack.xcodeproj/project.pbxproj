@@ -16,6 +16,8 @@
 		603574EC229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574EA229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png */; };
 		603574EE229CE38D00127673 /* floorball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 603574ED229CE38D00127673 /* floorball.jpeg */; };
 		603574F0229CE6B200127673 /* soccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 603574EF229CE6B200127673 /* soccer.jpg */; };
+		60696652229E204D00626659 /* netball.png in Resources */ = {isa = PBXBuildFile; fileRef = 60696651229E204D00626659 /* netball.png */; };
+		60A3E96E22C8A32B009330EF /* Screenshot 2019-06-30 at 3.57.44 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A3E96D22C8A32B009330EF /* Screenshot 2019-06-30 at 3.57.44 PM.png */; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 		603574EA229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-28 at 11.09.48 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-28 at 11.09.48 AM.png"; sourceTree = "<group>"; };
 		603574ED229CE38D00127673 /* floorball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = floorball.jpeg; path = Photos/floorball.jpeg; sourceTree = "<group>"; };
 		603574EF229CE6B200127673 /* soccer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = soccer.jpg; path = StatShack/Photos/soccer.jpg; sourceTree = "<group>"; };
+		60696651229E204D00626659 /* netball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = netball.png; path = StatShack/Photos/netball.png; sourceTree = "<group>"; };
+		60A3E96D22C8A32B009330EF /* Screenshot 2019-06-30 at 3.57.44 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-06-30 at 3.57.44 PM.png"; path = "StatShack/Photos/Screenshot 2019-06-30 at 3.57.44 PM.png"; sourceTree = "<group>"; };
 		8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.35.01 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.35.01 AM.png"; sourceTree = "<group>"; };
 		8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.25.32 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.25.32 AM.png"; sourceTree = "<group>"; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,8 @@
 			children = (
 				C97B268F2281233E00DC36B2 /* StatShack */,
 				C97B268E2281233E00DC36B2 /* Products */,
+				60A3E96D22C8A32B009330EF /* Screenshot 2019-06-30 at 3.57.44 PM.png */,
+				60696651229E204D00626659 /* netball.png */,
 				603574EF229CE6B200127673 /* soccer.jpg */,
 				603574E9229CDE1800127673 /* Screenshot 2019-05-28 at 11.07.52 AM.png */,
 				603574EA229CDE1900127673 /* Screenshot 2019-05-28 at 11.09.48 AM.png */,
@@ -164,6 +170,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60696652229E204D00626659 /* netball.png in Resources */,
+				60A3E96E22C8A32B009330EF /* Screenshot 2019-06-30 at 3.57.44 PM.png in Resources */,
 				C97B269B2281234000DC36B2 /* LaunchScreen.storyboard in Resources */,
 				C97B26A9228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png in Resources */,
 				603574D8228A719300127673 /* HomeScreen.png in Resources */,
