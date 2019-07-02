@@ -67,4 +67,19 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    @IBAction func teamOneEdit(_ sender: UIButton) {
+        if (!teamOneTable.isEditing) {
+            teamOneTable.setEditing(true, animated: true)
+        } else {
+            teamOneTable.setEditing(false, animated: true)
+        }
+    }
+    
+    @IBAction func teamTwoEdit(_ sender: UIButton) {
+        if (!teamTwoTable.isEditing) {
+            teamTwoTable.setEditing(true, animated: true)
+        } else {
+            teamTwoTable.setEditing(false, animated: true)
+        }
+    }
 }
