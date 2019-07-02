@@ -21,6 +21,7 @@
 		60A3E97022CAFD04009330EF /* Stat Shack.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A3E96F22CAFD04009330EF /* Stat Shack.png */; };
 		60A3E97422CB01E3009330EF /* Screenshot 2019-07-02 at 11.04.38 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A3E97322CB01E3009330EF /* Screenshot 2019-07-02 at 11.04.38 AM.png */; };
 		60A3E97622CB02E9009330EF /* soccer 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A3E97522CB02E9009330EF /* soccer 2.png */; };
+		60A3E97822CB0941009330EF /* handball.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A3E97722CB0941009330EF /* handball.png */; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		60A3E96F22CAFD04009330EF /* Stat Shack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stat Shack.png"; path = "StatShack/Photos/Stat Shack.png"; sourceTree = "<group>"; };
 		60A3E97322CB01E3009330EF /* Screenshot 2019-07-02 at 11.04.38 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-07-02 at 11.04.38 AM.png"; path = "StatShack/Photos/Screenshot 2019-07-02 at 11.04.38 AM.png"; sourceTree = "<group>"; };
 		60A3E97522CB02E9009330EF /* soccer 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "soccer 2.png"; path = "StatShack/Photos/soccer 2.png"; sourceTree = "<group>"; };
+		60A3E97722CB0941009330EF /* handball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = handball.png; path = StatShack/Photos/handball.png; sourceTree = "<group>"; };
 		8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.35.01 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.35.01 AM.png"; sourceTree = "<group>"; };
 		8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.25.32 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.25.32 AM.png"; sourceTree = "<group>"; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 			children = (
 				C97B268F2281233E00DC36B2 /* StatShack */,
 				C97B268E2281233E00DC36B2 /* Products */,
+				60A3E97722CB0941009330EF /* handball.png */,
 				60A3E97522CB02E9009330EF /* soccer 2.png */,
 				60A3E97322CB01E3009330EF /* Screenshot 2019-07-02 at 11.04.38 AM.png */,
 				60A3E96F22CAFD04009330EF /* Stat Shack.png */,
@@ -179,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A3E97822CB0941009330EF /* handball.png in Resources */,
 				60A3E97622CB02E9009330EF /* soccer 2.png in Resources */,
 				60696652229E204D00626659 /* netball.png in Resources */,
 				60A3E96E22C8A32B009330EF /* Screenshot 2019-06-30 at 3.57.44 PM.png in Resources */,
