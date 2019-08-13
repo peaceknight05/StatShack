@@ -67,6 +67,10 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        //this is just here to enable reagrranging
+    }
+    
     @IBAction func teamOneEdit(_ sender: UIButton) {
         if (!teamOneTable.isEditing) {
             teamOneTable.setEditing(true, animated: true)
