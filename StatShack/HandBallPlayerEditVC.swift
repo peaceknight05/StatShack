@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FDTextFieldTableViewCell
 
 class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // MARK: var
@@ -47,13 +48,45 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView.tag == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamOneCell", for: indexPath)
-            cell.textLabel?.text = "Player \(indexPath.row + 1)"
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamOneCell", for: indexPath) as! FDTextFieldTableViewCell
+            if (indexPath.section == 0) {
+                cell.textLabel?.text = "Goalkeeper"
+            } else {
+                switch (indexPath.row) {
+                case 0:
+                    cell.textLabel?.text = "Left Winger"
+                case 1:
+                    cell.textLabel?.text = "Right Winger"
+                case 2:
+                    cell.textLabel?.text = "Left Fullback"
+                case 3:
+                    cell.textLabel?.text = "Right Fullback"
+                default:
+                    cell.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
+                }
+            }
+            cell.textField.text = "Name"
             cell.textLabel?.isEnabled = true
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTwoCell", for: indexPath)
-            cell.textLabel?.text = "Player \(indexPath.row + 1)"
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTwoCell", for: indexPath) as! FDTextFieldTableViewCell
+            if (indexPath.section == 0) {
+                cell.textLabel?.text = "Goalkeeper"
+            } else {
+                switch (indexPath.row) {
+                case 0:
+                    cell.textLabel?.text = "Left Winger"
+                case 1:
+                    cell.textLabel?.text = "Right Winger"
+                case 2:
+                    cell.textLabel?.text = "Left Fullback"
+                case 3:
+                    cell.textLabel?.text = "Right Fullback"
+                default:
+                    cell.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
+                }
+            }
+            cell.textField.text = "Name"
             cell.textLabel?.isEnabled = true
             return cell
         }
@@ -65,10 +98,6 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             return "Player"
         }
-    }
-    
-    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        //this is just here to enable reagrranging
     }
     
     @IBAction func teamOneEdit(_ sender: UIButton) {

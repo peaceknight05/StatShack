@@ -1,0 +1,4 @@
+framework module FDTextFieldTableViewCell {
+  header "FDTextFieldTableViewCell-Swift.h"
+  requires objc
+}
