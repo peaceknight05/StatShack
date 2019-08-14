@@ -14,7 +14,8 @@
 		603574E82293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */; };
 		8C36C713229E154D00EB1447 /* HandBallPlayerEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36C712229E154D00EB1447 /* HandBallPlayerEditVC.swift */; };
 		8C84DB2C23039C0000BB086C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8C84DB2B23039C0000BB086C /* Cartfile */; };
-		8C84DB3123039CC400BB086C /* FDTextFieldTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C84DB3023039CC400BB086C /* FDTextFieldTableViewCell.framework */; };
+		8C84DB3123039CC400BB086C /* FDTextFieldTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C84DB3023039CC400BB086C /* FDTextFieldTableViewCell.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8C84DB332303A35F00BB086C /* FDTextFieldTableViewCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C84DB3023039CC400BB086C /* FDTextFieldTableViewCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
@@ -26,6 +27,20 @@
 		C97B26A72282990700DC36B2 /* HandballScoreCounterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26A62282990700DC36B2 /* HandballScoreCounterVC.swift */; };
 		C97B26A9228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = C97B26A8228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C84DB342303A36000BB086C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C84DB332303A35F00BB086C /* FDTextFieldTableViewCell.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		603574D7228A719300127673 /* HomeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomeScreen.png; path = StatShack/Photos/HomeScreen.png; sourceTree = "<group>"; };
@@ -122,6 +137,7 @@
 				C97B26892281233E00DC36B2 /* Sources */,
 				C97B268A2281233E00DC36B2 /* Frameworks */,
 				C97B268B2281233E00DC36B2 /* Resources */,
+				8C84DB342303A36000BB086C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
