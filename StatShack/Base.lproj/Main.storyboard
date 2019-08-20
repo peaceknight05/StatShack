@@ -121,18 +121,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2019-05-21 at 11.11.52 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-XU-bJP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2019-05-21 at 11.11.52 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-XU-bJP">
                                 <rect key="frame" x="0.0" y="70" width="1024" height="594"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="594" id="BuV-kq-U9w"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-t2-hC4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-t2-hC4">
                                 <rect key="frame" x="-93" y="1270" width="285" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="61n-OK-yPU"/>
+                                </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QId-zY-bFK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QId-zY-bFK">
                                 <rect key="frame" x="49" y="813" width="461" height="449"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="449" id="YEF-3k-O4S"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamOneCell" textLabel="TmA-jH-jT0" detailTextLabel="6Hv-y9-Ybe" style="IBUITableViewCellStyleValue1" id="5tO-32-baI" customClass="FDTextFieldTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="461" height="44"/>
@@ -164,9 +170,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gt0-s0-t32">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gt0-s0-t32">
                                 <rect key="frame" x="518" y="813" width="461" height="449"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamTwoCell" textLabel="738-nk-4Qh" detailTextLabel="YQE-rL-b0U" style="IBUITableViewCellStyleValue1" id="l2z-t8-YEG" customClass="FDTextFieldTableViewCell">
@@ -196,46 +201,43 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team One Name" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="3T7-RQ-Q3c">
-                                <rect key="frame" x="49" y="775" width="461" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team One Name" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="3T7-RQ-Q3c">
+                                <rect key="frame" x="49" y="752" width="461" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="461" id="tOV-zh-GuU"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team Two Name" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-Uv-gwg">
-                                <rect key="frame" x="518" y="775" width="461" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team Two Name" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-Uv-gwg">
+                                <rect key="frame" x="518" y="752" width="461" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jy-8U-Xga">
-                                <rect key="frame" x="49" y="738" width="461" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.39279425140000002" green="0.78121656179999999" blue="0.89688831570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="Edit Team One Players">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="teamOneEdit:" destination="8cs-5X-9HX" eventType="touchUpInside" id="3zF-y9-xUu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDT-pZ-EVb">
-                                <rect key="frame" x="518" y="738" width="461" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97696912290000004" green="0.60873299839999995" blue="0.67820656300000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="Edit Team Two Players">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="teamTwoEdit:" destination="8cs-5X-9HX" eventType="touchUpInside" id="Gid-T1-Vbt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gt0-s0-t32" firstAttribute="trailing" secondItem="jfx-Uv-gwg" secondAttribute="trailing" id="0fy-kI-niU"/>
+                            <constraint firstItem="gt0-s0-t32" firstAttribute="top" secondItem="QId-zY-bFK" secondAttribute="top" id="1dE-hv-thn"/>
+                            <constraint firstItem="mHX-LB-KUi" firstAttribute="trailing" secondItem="jfx-Uv-gwg" secondAttribute="trailing" constant="45" id="3fw-0U-UcY"/>
+                            <constraint firstAttribute="bottom" secondItem="3T7-RQ-Q3c" secondAttribute="bottom" constant="584" id="8Z9-gB-a4e"/>
+                            <constraint firstItem="jfx-Uv-gwg" firstAttribute="baseline" secondItem="3T7-RQ-Q3c" secondAttribute="baseline" id="A4n-2J-CSm"/>
+                            <constraint firstAttribute="trailing" secondItem="JMz-XU-bJP" secondAttribute="trailing" id="FEp-Gw-vGa"/>
+                            <constraint firstItem="Pek-t2-hC4" firstAttribute="bottom" secondItem="mHX-LB-KUi" secondAttribute="bottom" id="Pj1-WW-xp0"/>
+                            <constraint firstItem="QId-zY-bFK" firstAttribute="leading" secondItem="3T7-RQ-Q3c" secondAttribute="leading" id="QqK-Bu-bfq"/>
+                            <constraint firstItem="QId-zY-bFK" firstAttribute="top" secondItem="3T7-RQ-Q3c" secondAttribute="bottom" constant="31" id="RTC-B7-CM2"/>
+                            <constraint firstItem="3T7-RQ-Q3c" firstAttribute="leading" secondItem="mHX-LB-KUi" secondAttribute="leading" constant="49" id="WT2-N0-GAW"/>
+                            <constraint firstItem="gt0-s0-t32" firstAttribute="leading" secondItem="jfx-Uv-gwg" secondAttribute="leading" id="ZEk-kX-rBV"/>
+                            <constraint firstItem="mHX-LB-KUi" firstAttribute="trailing" secondItem="Pek-t2-hC4" secondAttribute="trailing" constant="832" id="a3S-Pd-ipb"/>
+                            <constraint firstItem="Pek-t2-hC4" firstAttribute="top" secondItem="QId-zY-bFK" secondAttribute="bottom" constant="8" symbolic="YES" id="e9r-Et-9WA"/>
+                            <constraint firstItem="JMz-XU-bJP" firstAttribute="top" secondItem="mHX-LB-KUi" secondAttribute="top" id="e9y-1b-Sp4"/>
+                            <constraint firstItem="gt0-s0-t32" firstAttribute="leading" secondItem="QId-zY-bFK" secondAttribute="trailing" constant="8" symbolic="YES" id="etZ-cg-vYp"/>
+                            <constraint firstItem="jfx-Uv-gwg" firstAttribute="leading" secondItem="3T7-RQ-Q3c" secondAttribute="trailing" constant="8" symbolic="YES" id="ndI-0Y-jhI"/>
+                            <constraint firstItem="JMz-XU-bJP" firstAttribute="leading" secondItem="Lm0-E1-tzW" secondAttribute="leading" id="zQj-iK-efJ"/>
+                            <constraint firstItem="gt0-s0-t32" firstAttribute="bottom" secondItem="QId-zY-bFK" secondAttribute="bottom" id="zna-AU-2CI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mHX-LB-KUi"/>
                     </view>
                     <connections>

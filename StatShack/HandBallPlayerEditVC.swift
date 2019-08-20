@@ -9,19 +9,19 @@
 import UIKit
 import FDTextFieldTableViewCell
 
-class HandBallPlayerEditVC: UIViewController/*, UITableViewDelegate, UITableViewDataSource*/ {
+class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // MARK: var
 
-    @IBOutlet var teamOneTable: FDTextFieldTableViewCell!
-    @IBOutlet var teamTwoTable: FDTextFieldTableViewCell!
+    @IBOutlet var teamOneTable: UITableView!
+    @IBOutlet var teamTwoTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //teamOneTable.delegate = self
-        //teamTwoTable.delegate = self
-        //teamOneTable.dataSource = self
-        //teamTwoTable.dataSource = self
+        teamOneTable.delegate = self
+        teamTwoTable.delegate = self
+        teamOneTable.dataSource = self
+        teamTwoTable.dataSource = self
         teamOneTable.tag = 0
         teamTwoTable.tag = 1
         
@@ -48,7 +48,7 @@ class HandBallPlayerEditVC: UIViewController/*, UITableViewDelegate, UITableView
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView.tag == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamOneCell", for: indexPath) as! FDTextFieldTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamOneCell") as! FDTextFieldTableViewCell
             if (indexPath.section == 0) {
                 cell.textLabel?.text = "Goalkeeper"
             } else {
@@ -69,7 +69,7 @@ class HandBallPlayerEditVC: UIViewController/*, UITableViewDelegate, UITableView
             cell.textLabel?.isEnabled = true
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTwoCell", for: indexPath) as! FDTextFieldTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTwoCell") as! FDTextFieldTableViewCell
             if (indexPath.section == 0) {
                 cell.textLabel?.text = "Goalkeeper"
             } else {
@@ -97,22 +97,6 @@ class HandBallPlayerEditVC: UIViewController/*, UITableViewDelegate, UITableView
             return "Goalkeeper"
         } else {
             return "Player"
-        }
-    }
-    
-    @IBAction func teamOneEdit(_ sender: UIButton) {
-        if (!teamOneTable.isEditing) {
-            teamOneTable.setEditing(true, animated: true)
-        } else {
-            teamOneTable.setEditing(false, animated: true)
-        }
-    }
-    
-    @IBAction func teamTwoEdit(_ sender: UIButton) {
-        if (!teamTwoTable.isEditing) {
-            teamTwoTable.setEditing(true, animated: true)
-        } else {
-            teamTwoTable.setEditing(false, animated: true)
         }
     }
 }
