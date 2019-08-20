@@ -13,9 +13,8 @@
 		603574E6228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */; };
 		603574E82293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */; };
 		8C36C713229E154D00EB1447 /* HandBallPlayerEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36C712229E154D00EB1447 /* HandBallPlayerEditVC.swift */; };
-		8C84DB2C23039C0000BB086C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8C84DB2B23039C0000BB086C /* Cartfile */; };
-		8C84DB3123039CC400BB086C /* FDTextFieldTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C84DB3023039CC400BB086C /* FDTextFieldTableViewCell.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		8C84DB332303A35F00BB086C /* FDTextFieldTableViewCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C84DB3023039CC400BB086C /* FDTextFieldTableViewCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C5187B7230B9D9C008977C7 /* FDTextFieldTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */; };
+		8C5187B8230B9D9C008977C7 /* FDTextFieldTableViewCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
@@ -35,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8C84DB332303A35F00BB086C /* FDTextFieldTableViewCell.framework in Embed Frameworks */,
+				8C5187B8230B9D9C008977C7 /* FDTextFieldTableViewCell.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,8 +48,7 @@
 		603574E4228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-17 at 11.58.05 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-17 at 11.58.05 AM.png"; sourceTree = "<group>"; };
 		603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-21 at 11.11.52 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-21 at 11.11.52 AM.png"; sourceTree = "<group>"; };
 		8C36C712229E154D00EB1447 /* HandBallPlayerEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBallPlayerEditVC.swift; sourceTree = "<group>"; };
-		8C84DB2B23039C0000BB086C /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		8C84DB3023039CC400BB086C /* FDTextFieldTableViewCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FDTextFieldTableViewCell.framework; path = Carthage/Build/iOS/FDTextFieldTableViewCell.framework; sourceTree = "<group>"; };
+		8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FDTextFieldTableViewCell.framework; path = StatShack/Assets.xcassets/Carthage/Build/iOS/FDTextFieldTableViewCell.framework; sourceTree = "<group>"; };
 		8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.35.01 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.35.01 AM.png"; sourceTree = "<group>"; };
 		8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.25.32 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.25.32 AM.png"; sourceTree = "<group>"; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,25 +68,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C84DB3123039CC400BB086C /* FDTextFieldTableViewCell.framework in Frameworks */,
+				8C5187B7230B9D9C008977C7 /* FDTextFieldTableViewCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8C84DB2F23039CC400BB086C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8C84DB3023039CC400BB086C /* FDTextFieldTableViewCell.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C97B26842281233E00DC36B2 = {
 			isa = PBXGroup;
 			children = (
-				8C84DB2B23039C0000BB086C /* Cartfile */,
 				C97B268F2281233E00DC36B2 /* StatShack */,
 				C97B268E2281233E00DC36B2 /* Products */,
 				603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */,
@@ -99,7 +88,7 @@
 				C97B26A8228299DB00DC36B2 /* Screenshot 2019-05-08 at 12.59.45 PM.png */,
 				8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */,
 				8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */,
-				8C84DB2F23039CC400BB086C /* Frameworks */,
+				8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +149,7 @@
 				TargetAttributes = {
 					C97B268C2281233E00DC36B2 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -192,7 +182,6 @@
 				C97B26982281234000DC36B2 /* Assets.xcassets in Resources */,
 				603574E2228E673300127673 /* logo.png in Resources */,
 				8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */,
-				8C84DB2C23039C0000BB086C /* Cartfile in Resources */,
 				8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */,
 				603574E6228E68EA00127673 /* Screenshot 2019-05-17 at 11.58.05 AM.png in Resources */,
 				603574E5228E68EA00127673 /* Screenshot 2019-05-17 at 11.57.57 AM.png in Resources */,
@@ -362,6 +351,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/StatShack/Assets.xcassets/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = StatShack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -370,7 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SST.StatShack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -383,6 +373,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/StatShack/Assets.xcassets/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = StatShack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +382,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SST.StatShack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -9,19 +9,19 @@
 import UIKit
 import FDTextFieldTableViewCell
 
-class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HandBallPlayerEditVC: UIViewController/*, UITableViewDelegate, UITableViewDataSource*/ {
     // MARK: var
 
-    @IBOutlet var teamOneTable: UITableView!
-    @IBOutlet var teamTwoTable: UITableView!
+    @IBOutlet var teamOneTable: FDTextFieldTableViewCell!
+    @IBOutlet var teamTwoTable: FDTextFieldTableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        teamOneTable.delegate = self
-        teamTwoTable.delegate = self
-        teamOneTable.dataSource = self
-        teamTwoTable.dataSource = self
+        
+        //teamOneTable.delegate = self
+        //teamTwoTable.delegate = self
+        //teamOneTable.dataSource = self
+        //teamTwoTable.dataSource = self
         teamOneTable.tag = 0
         teamTwoTable.tag = 1
         
