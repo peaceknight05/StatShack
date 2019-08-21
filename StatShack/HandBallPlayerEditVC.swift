@@ -59,6 +59,8 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
             }
             cell?.textField.text = "Name"
             cell?.textLabel?.isEnabled = true
+            cell?.backgroundColor = UIColor(red: 100, green: 199, blue: 229, alpha: 1)
+            
             return cell!
         } else {
             var cell : FDTextFieldTableViewCell?
