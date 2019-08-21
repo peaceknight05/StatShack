@@ -18,6 +18,8 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableSetup()
+        
         teamOneTable.delegate = self
         teamTwoTable.delegate = self
         teamOneTable.dataSource = self
@@ -30,14 +32,67 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
         self.view.addGestureRecognizer(tap)
     }
 
-    // 0 means blue 1 means red
-
-    // MARK: Data Source
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView.tag == 0 {
+            var cell : FDTextFieldTableViewCell?
+            cell = (tableView.dequeueReusableCell(withIdentifier: "TeamOneCell") as! FDTextFieldTableViewCell)
+            guard (cell != nil) else {
+                print("dequeued cell is nil")
+                abort()
+            }
+            
+            if (indexPath.section == 0) {
+                cell?.textLabel?.text = "Goalkeeper"
+            } else {
+                switch (indexPath.row) {
+                case 0:
+                    cell?.textLabel?.text = "Left Winger"
+                case 1:
+                    cell?.textLabel?.text = "Right Winger"
+                case 2:
+                    cell?.textLabel?.text = "Left Fullback"
+                case 3:
+                    cell?.textLabel?.text = "Right Fullback"
+                default:
+                    cell?.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
+                }
+            }
+            cell?.textField.text = "Name"
+            cell?.textLabel?.isEnabled = true
+            return cell!
+        } else {
+            var cell : FDTextFieldTableViewCell?
+            cell = (tableView.dequeueReusableCell(withIdentifier: "TeamTwoCell", for: indexPath) as! FDTextFieldTableViewCell)
+            guard (cell != nil) else {
+                print("dequeued cell is nil")
+                abort()
+            }
+            
+            if (indexPath.section == 0) {
+                cell?.textLabel?.text = "Goalkeeper"
+            } else {
+                switch (indexPath.row) {
+                case 0:
+                    cell?.textLabel?.text = "Left Winger"
+                case 1:
+                    cell?.textLabel?.text = "Right Winger"
+                case 2:
+                    cell?.textLabel?.text = "Left Fullback"
+                case 3:
+                    cell?.textLabel?.text = "Right Fullback"
+                default:
+                    cell?.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
+                }
+            }
+            cell?.textField.text = "Name"
+            cell?.textLabel?.isEnabled = true
+            return cell!
+        }
     }
+}
 
+extension HandBallPlayerEditVC {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
@@ -45,58 +100,24 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
             return 4
         }
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView.tag == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamOneCell") as! FDTextFieldTableViewCell
-            if (indexPath.section == 0) {
-                cell.textLabel?.text = "Goalkeeper"
-            } else {
-                switch (indexPath.row) {
-                case 0:
-                    cell.textLabel?.text = "Left Winger"
-                case 1:
-                    cell.textLabel?.text = "Right Winger"
-                case 2:
-                    cell.textLabel?.text = "Left Fullback"
-                case 3:
-                    cell.textLabel?.text = "Right Fullback"
-                default:
-                    cell.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
-                }
-            }
-            cell.textField.text = "Name"
-            cell.textLabel?.isEnabled = true
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TeamTwoCell") as! FDTextFieldTableViewCell
-            if (indexPath.section == 0) {
-                cell.textLabel?.text = "Goalkeeper"
-            } else {
-                switch (indexPath.row) {
-                case 0:
-                    cell.textLabel?.text = "Left Winger"
-                case 1:
-                    cell.textLabel?.text = "Right Winger"
-                case 2:
-                    cell.textLabel?.text = "Left Fullback"
-                case 3:
-                    cell.textLabel?.text = "Right Fullback"
-                default:
-                    cell.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
-                }
-            }
-            cell.textField.text = "Name"
-            cell.textLabel?.isEnabled = true
-            return cell
-        }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
-
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return "Goalkeeper"
         } else {
             return "Player"
         }
+    }
+    
+}
+
+extension HandBallPlayerEditVC {
+    func tableSetup() {
+        teamOneTable.register(FDTextFieldTableViewCell.self, forCellReuseIdentifier: "TeamOneCell")
+        teamTwoTable.register(FDTextFieldTableViewCell.self, forCellReuseIdentifier: "TeamTwoCell")
     }
 }
