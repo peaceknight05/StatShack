@@ -21,11 +21,11 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
         tableSetup()
 
         teamOneTable.dataSource = self
-        teamOneTable.delegate = self
-        teamOneTable.tag = 0
+        teamOneTable.delegate   = self
+        teamOneTable.tag        = 0
         teamTwoTable.dataSource = self
-        teamTwoTable.delegate = self
-        teamTwoTable.tag = 1
+        teamTwoTable.delegate   = self
+        teamTwoTable.tag        = 1
 
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
