@@ -216,12 +216,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-Rg-8MN">
+                                <rect key="frame" x="431" y="1270" width="163" height="57"/>
+                                <color key="backgroundColor" red="0.74901960784313726" green="0.72549019607843135" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ext-oe-Kd8" kind="show" id="yqX-ZL-8Ee"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gt0-s0-t32" firstAttribute="trailing" secondItem="jfx-Uv-gwg" secondAttribute="trailing" id="0fy-kI-niU"/>
                             <constraint firstItem="gt0-s0-t32" firstAttribute="top" secondItem="QId-zY-bFK" secondAttribute="top" id="1dE-hv-thn"/>
                             <constraint firstItem="mHX-LB-KUi" firstAttribute="trailing" secondItem="jfx-Uv-gwg" secondAttribute="trailing" constant="45" id="3fw-0U-UcY"/>
+                            <constraint firstItem="Hwq-Rg-8MN" firstAttribute="top" secondItem="Pek-t2-hC4" secondAttribute="top" id="5c9-qv-4qf"/>
                             <constraint firstAttribute="bottom" secondItem="3T7-RQ-Q3c" secondAttribute="bottom" constant="584" id="8Z9-gB-a4e"/>
                             <constraint firstItem="jfx-Uv-gwg" firstAttribute="baseline" secondItem="3T7-RQ-Q3c" secondAttribute="baseline" id="A4n-2J-CSm"/>
                             <constraint firstAttribute="trailing" secondItem="JMz-XU-bJP" secondAttribute="trailing" id="FEp-Gw-vGa"/>
@@ -230,10 +242,13 @@
                             <constraint firstItem="QId-zY-bFK" firstAttribute="top" secondItem="3T7-RQ-Q3c" secondAttribute="bottom" constant="31" id="RTC-B7-CM2"/>
                             <constraint firstItem="3T7-RQ-Q3c" firstAttribute="leading" secondItem="mHX-LB-KUi" secondAttribute="leading" constant="49" id="WT2-N0-GAW"/>
                             <constraint firstItem="gt0-s0-t32" firstAttribute="leading" secondItem="jfx-Uv-gwg" secondAttribute="leading" id="ZEk-kX-rBV"/>
+                            <constraint firstItem="mHX-LB-KUi" firstAttribute="bottom" secondItem="Hwq-Rg-8MN" secondAttribute="bottom" constant="39" id="ZVA-lc-3ss"/>
                             <constraint firstItem="mHX-LB-KUi" firstAttribute="trailing" secondItem="Pek-t2-hC4" secondAttribute="trailing" constant="832" id="a3S-Pd-ipb"/>
                             <constraint firstItem="Pek-t2-hC4" firstAttribute="top" secondItem="QId-zY-bFK" secondAttribute="bottom" constant="8" symbolic="YES" id="e9r-Et-9WA"/>
                             <constraint firstItem="JMz-XU-bJP" firstAttribute="top" secondItem="mHX-LB-KUi" secondAttribute="top" id="e9y-1b-Sp4"/>
                             <constraint firstItem="gt0-s0-t32" firstAttribute="leading" secondItem="QId-zY-bFK" secondAttribute="trailing" constant="8" symbolic="YES" id="etZ-cg-vYp"/>
+                            <constraint firstItem="mHX-LB-KUi" firstAttribute="trailing" secondItem="Hwq-Rg-8MN" secondAttribute="trailing" constant="430" id="hhx-hD-hoW"/>
+                            <constraint firstItem="Hwq-Rg-8MN" firstAttribute="centerX" secondItem="JMz-XU-bJP" secondAttribute="centerX" id="lC7-qE-fTD"/>
                             <constraint firstItem="jfx-Uv-gwg" firstAttribute="leading" secondItem="3T7-RQ-Q3c" secondAttribute="trailing" constant="8" symbolic="YES" id="ndI-0Y-jhI"/>
                             <constraint firstItem="JMz-XU-bJP" firstAttribute="leading" secondItem="Lm0-E1-tzW" secondAttribute="leading" id="zQj-iK-efJ"/>
                             <constraint firstItem="gt0-s0-t32" firstAttribute="bottom" secondItem="QId-zY-bFK" secondAttribute="bottom" id="zna-AU-2CI"/>
@@ -256,15 +271,6 @@
                     <view key="view" contentMode="scaleToFill" id="Wea-f4-tly">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info Add VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuN-0Q-EAh">
-                                <rect key="frame" x="261" y="623" width="502" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GHZ-Au-lv2"/>
                     </view>

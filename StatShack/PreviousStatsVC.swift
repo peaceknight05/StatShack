@@ -15,9 +15,9 @@ class PreviousStatsVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        dataView.delegate = self
-        dataView.dataSource = self
+
+        dataView.dataSource  = self
+        dataView.delegate    = self
         navigationItem.title = "Previous Stats"
     }
 

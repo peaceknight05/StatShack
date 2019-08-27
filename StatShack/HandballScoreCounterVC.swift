@@ -8,7 +8,7 @@
 
 import UIKit
 
-//currently attatched to the handball player edit page; will be changed to the actual counter page after player edit class is created
+// currently attatched to the handball player edit page; will be changed to the actual counter page after player edit class is created
 
 class HandballScoreCounterVC: UIViewController {
     override func viewDidLoad() {
