@@ -16,7 +16,6 @@
 		8C5187B8230B9D9C008977C7 /* FDTextFieldTableViewCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
-		8CDEC5C42314D2D200F2BB7C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDEC5C32314D2D200F2BB7C /* CoreData.framework */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
 		C97B26932281233E00DC36B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26922281233E00DC36B2 /* ViewController.swift */; };
 		C97B26962281233E00DC36B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97B26942281233E00DC36B2 /* Main.storyboard */; };
@@ -51,7 +50,6 @@
 		8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FDTextFieldTableViewCell.framework; path = StatShack/Assets.xcassets/Carthage/Build/iOS/FDTextFieldTableViewCell.framework; sourceTree = "<group>"; };
 		8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.35.01 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.35.01 AM.png"; sourceTree = "<group>"; };
 		8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.25.32 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.25.32 AM.png"; sourceTree = "<group>"; };
-		8CDEC5C32314D2D200F2BB7C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97B26902281233E00DC36B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97B26922281233E00DC36B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,21 +67,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CDEC5C42314D2D200F2BB7C /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8CDEC5C22314D2D200F2BB7C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8CDEC5C32314D2D200F2BB7C /* CoreData.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C97B26842281233E00DC36B2 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +87,6 @@
 				8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */,
 				8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */,
 				8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */,
-				8CDEC5C22314D2D200F2BB7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
