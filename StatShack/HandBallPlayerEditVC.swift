@@ -21,11 +21,11 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
         tableSetup()
 
         teamOneTable.dataSource = self
-        teamOneTable.delegate   = self
-        teamOneTable.tag        = 0
+        teamOneTable.delegate = self
+        teamOneTable.tag = 0
         teamTwoTable.dataSource = self
-        teamTwoTable.delegate   = self
-        teamTwoTable.tag        = 1
+        teamTwoTable.delegate = self
+        teamTwoTable.tag = 1
 
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
@@ -113,9 +113,32 @@ extension HandBallPlayerEditVC {
             return "Player"
         }
     }
-}
 
-extension HandBallPlayerEditVC {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? HandballScoreCounterVC {
+            var passOne: [Positions: String] = [:]
+            var passTwo: [Positions: String] = [:]
+
+            passOne[.GOALKEEPER] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 0, section: 0)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.GOALKEEPER] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 0, section: 0)) as! FDTextFieldTableViewCell).textField.text!
+
+            passOne[.LEFT_WINGER] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 0, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.LEFT_WINGER] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 0, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+
+            passOne[.RIGHT_WINGER] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 1, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.RIGHT_WINGER] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 1, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+
+            passOne[.LEFT_FULLBACK] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 2, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.LEFT_FULLBACK] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 2, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+
+            passOne[.RIGHT_FULLBACK] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 3, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.RIGHT_FULLBACK] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 3, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+
+            vc.teamOneNames = passOne
+            vc.teamTwoNames = passTwo
+        }
+    }
+
     func tableSetup() {
         teamOneTable.register(FDTextFieldTableViewCell.self, forCellReuseIdentifier: "TeamOneCell")
         teamTwoTable.register(FDTextFieldTableViewCell.self, forCellReuseIdentifier: "TeamTwoCell")

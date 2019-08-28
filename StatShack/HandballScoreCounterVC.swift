@@ -8,12 +8,34 @@
 
 import UIKit
 
-// currently attatched to the handball player edit page; will be changed to the actual counter page after player edit class is created
-
 class HandballScoreCounterVC: UIViewController {
+    // MARK: var
+    var startTime: Date?
+    var elapsedTime: TimeInterval {
+        if let startTime = self.startTime {
+            return -startTime.timeIntervalSinceNow
+        } else {
+            return 0
+        }
+    }
+    var teamOneNames: [Positions: String]?
+    var teamTwoNames: [Positions: String]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    func startTimer() {
+        startTime = Date()
+    }
+}
+
+enum Positions {
+    case GOALKEEPER
+    case LEFT_WINGER
+    case RIGHT_WINGER
+    case LEFT_FULLBACK
+    case RIGHT_FULLBACK
 }
