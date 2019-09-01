@@ -28,7 +28,9 @@ class HandballScoreCounterVC: UIViewController {
     var teamtwoName: String?
     var teamOneNames: [Positions: String]?
     var teamTwoNames: [Positions: String]?
-    var elapsedTime: Int = 0
+    var elapsedTime: Double = 0.0
+    var elapsedTimeR: Double = 0.0
+    var elapsedTimeB: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +51,25 @@ class HandballScoreCounterVC: UIViewController {
     
     @objc func updateElapsedTimeLabel() {
         if isRunning {
-            elapsedTime += 1
+            elapsedTime += 0.1
             
-            mainClockLabel.text = String(format: "%02d:%02d", Int(elapsedTime / 60), Int(elapsedTime - (elapsedTime / 60) * 60))
+            mainClockLabel.text = String(format: "%02d:%02d", Int(elapsedTime / 60), Int(elapsedTime.truncatingRemainder(dividingBy: 60)))
+        }
+    }
+    
+    @objc func updateElapsedTimeLabelR() {
+        if isRunning {
+            elapsedTimeR += 0.1
+            
+            redClockLabel.text = String(format: "%02d:%02d", Int(elapsedTimeR / 60), Int(elapsedTimeR.truncatingRemainder(dividingBy: 60)))
+        }
+    }
+    
+    @objc func updateElapsedTimeLabelB() {
+        if isRunning {
+            elapsedTimeB += 0.1
+            
+            blueClockLabel.text = String(format: "%02d:%02d", Int(elapsedTimeB / 60), Int(elapsedTimeB.truncatingRemainder(dividingBy: 60)))
         }
     }
     
@@ -67,6 +85,8 @@ class HandballScoreCounterVC: UIViewController {
             startTimer()
         } else {
             stopTimer()
+            timerB?.invalidate()
+            timerR?.invalidate()
         }
     }
     
@@ -77,9 +97,9 @@ class HandballScoreCounterVC: UIViewController {
         
         if !gameStart {
             loadTimer()
-        
+            loadBlueTimer()
             possesion = .BLUE
-
+            isPausedRed = true
             startTimer()
             gameStart = true
         } else {
@@ -87,6 +107,10 @@ class HandballScoreCounterVC: UIViewController {
                 return
             }
             
+            loadBlueTimer()
+            timerR?.invalidate()
+            isPausedBlue = false
+            isPausedRed = true
             possesion = .BLUE
 
         }
@@ -99,9 +123,9 @@ class HandballScoreCounterVC: UIViewController {
         
         if !gameStart {
             loadTimer()
-
+            loadRedTimer()
             possesion = .RED
-
+            isPausedBlue = true
             startTimer()
             gameStart = true
         } else {
@@ -109,13 +133,24 @@ class HandballScoreCounterVC: UIViewController {
                 return
             }
             
+            loadRedTimer()
+            timerB?.invalidate()
             possesion = .RED
-
+            isPausedRed = false
+            isPausedBlue = false
         }
     }
     
     func loadTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateElapsedTimeLabel), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateElapsedTimeLabel), userInfo: nil, repeats: true)
+    }
+    
+    func loadBlueTimer() {
+        timerB = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateElapsedTimeLabelB), userInfo: nil, repeats: true)
+    }
+    
+    func loadRedTimer() {
+        timerR = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateElapsedTimeLabelR), userInfo: nil, repeats: true)
     }
 }
 
