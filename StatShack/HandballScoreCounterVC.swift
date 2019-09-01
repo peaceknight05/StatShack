@@ -15,6 +15,17 @@ class HandballScoreCounterVC: UIViewController {
     @IBOutlet weak var blueClockLabel: UILabel!
     @IBOutlet weak var redClockLabel: UILabel!
     
+    @IBOutlet weak var bgkb: UIButton!
+    @IBOutlet weak var brwb: UIButton!
+    @IBOutlet weak var blwb: UIButton!
+    @IBOutlet weak var brfb: UIButton!
+    @IBOutlet weak var blfb: UIButton!
+    @IBOutlet weak var rgkb: UIButton!
+    @IBOutlet weak var rrwb: UIButton!
+    @IBOutlet weak var rlwb: UIButton!
+    @IBOutlet weak var rrfb: UIButton!
+    @IBOutlet weak var rlfb: UIButton!
+    
     var possesion = Possesion.NONE
     var gameStart = false
     var timer: Timer?
@@ -34,6 +45,37 @@ class HandballScoreCounterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !(teamOneNames![.GOALKEEPER]! == "") {
+            bgkb.setTitle(teamOneNames![.GOALKEEPER]!, for: .normal)
+        }
+        if !(teamOneNames![.RIGHT_WINGER]! == "") {
+            brwb.setTitle(teamOneNames![.RIGHT_WINGER]!, for: .normal)
+        }
+        if !(teamOneNames![.LEFT_WINGER]! == "") {
+            blwb.setTitle(teamOneNames![.LEFT_WINGER]!, for: .normal)
+        }
+        if !(teamOneNames![.RIGHT_FULLBACK]! == "") {
+            brfb.setTitle(teamOneNames![.RIGHT_FULLBACK]!, for: .normal)
+        }
+        if !(teamOneNames![.LEFT_FULLBACK]! == "") {
+            blfb.setTitle(teamOneNames![.LEFT_FULLBACK]!, for: .normal)
+        }
+        if !(teamTwoNames![.GOALKEEPER]! == "") {
+            rgkb.setTitle(teamTwoNames![.GOALKEEPER]!, for: .normal)
+        }
+        if !(teamTwoNames![.RIGHT_WINGER]! == "") {
+            rrwb.setTitle(teamTwoNames![.RIGHT_WINGER]!, for: .normal)
+        }
+        if !(teamTwoNames![.LEFT_WINGER]! == "") {
+            rlwb.setTitle(teamTwoNames![.LEFT_WINGER]!, for: .normal)
+        }
+        if !(teamTwoNames![.RIGHT_FULLBACK]! == "") {
+            rrfb.setTitle(teamTwoNames![.RIGHT_FULLBACK]!, for: .normal)
+        }
+        if !(teamTwoNames![.LEFT_FULLBACK]! == "") {
+            rlfb.setTitle(teamTwoNames![.LEFT_FULLBACK]!, for: .normal)
+        }
     }
     
     func startTimer() {

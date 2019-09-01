@@ -424,9 +424,19 @@
                         <viewLayoutGuide key="safeArea" id="GHZ-Au-lv2"/>
                     </view>
                     <connections>
+                        <outlet property="bgkb" destination="xPf-Vg-seO" id="kyb-4E-1s3"/>
+                        <outlet property="blfb" destination="oj1-vJ-8dF" id="6YO-QR-eYw"/>
                         <outlet property="blueClockLabel" destination="0DG-lg-o5i" id="Fxp-vQ-E4I"/>
+                        <outlet property="blwb" destination="GDg-be-ONc" id="OUF-NJ-ipG"/>
+                        <outlet property="brfb" destination="zaq-st-qo2" id="898-7y-jOL"/>
+                        <outlet property="brwb" destination="tCa-H6-oUG" id="G3K-Rk-aay"/>
                         <outlet property="mainClockLabel" destination="gYP-Xl-QSm" id="Jzi-yW-JN6"/>
                         <outlet property="redClockLabel" destination="uGq-OS-Hla" id="nPa-cX-MGG"/>
+                        <outlet property="rgkb" destination="TcN-cY-PWB" id="I4b-hG-KUY"/>
+                        <outlet property="rlfb" destination="0an-7p-UOz" id="S3Y-SY-9yJ"/>
+                        <outlet property="rlwb" destination="nwC-iY-f07" id="sZx-YS-Zxa"/>
+                        <outlet property="rrfb" destination="0se-hn-1wx" id="IsU-2f-Mjo"/>
+                        <outlet property="rrwb" destination="DBw-oH-9SK" id="5So-3c-VVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ear-VQ-yQm" userLabel="First Responder" sceneMemberID="firstResponder"/>

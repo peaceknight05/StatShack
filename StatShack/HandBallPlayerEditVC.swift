@@ -118,21 +118,21 @@ extension HandBallPlayerEditVC {
         if let vc = segue.destination as? HandballScoreCounterVC {
             var passOne: [Positions: String] = [:]
             var passTwo: [Positions: String] = [:]
+            
+            passOne[.GOALKEEPER] = (teamOneTable.cellForRow(at: IndexPath(row: 0, section: 0)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.GOALKEEPER] = (teamTwoTable.cellForRow(at: IndexPath(row: 0, section: 0)) as! FDTextFieldTableViewCell).textField.text!
 
-            passOne[.GOALKEEPER] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 0, section: 0)) as! FDTextFieldTableViewCell).textField.text!
-            passTwo[.GOALKEEPER] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 0, section: 0)) as! FDTextFieldTableViewCell).textField.text!
+            passOne[.RIGHT_WINGER] = (teamOneTable.cellForRow(at: IndexPath(row: 0, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.RIGHT_WINGER] = (teamTwoTable.cellForRow(at: IndexPath(row: 0, section: 1)) as! FDTextFieldTableViewCell).textField.text!
 
-            passOne[.LEFT_WINGER] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 0, section: 1)) as! FDTextFieldTableViewCell).textField.text!
-            passTwo[.LEFT_WINGER] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 0, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passOne[.LEFT_WINGER] = (teamOneTable.cellForRow(at: IndexPath(row: 1, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.LEFT_WINGER] = (teamTwoTable.cellForRow(at: IndexPath(row: 1, section: 1)) as! FDTextFieldTableViewCell).textField.text!
 
-            passOne[.RIGHT_WINGER] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 1, section: 1)) as! FDTextFieldTableViewCell).textField.text!
-            passTwo[.RIGHT_WINGER] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 1, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passOne[.RIGHT_FULLBACK] = (teamOneTable.cellForRow(at: IndexPath(row: 2, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.RIGHT_FULLBACK] = (teamTwoTable.cellForRow(at: IndexPath(row: 2, section: 1)) as! FDTextFieldTableViewCell).textField.text!
 
-            passOne[.LEFT_FULLBACK] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 2, section: 1)) as! FDTextFieldTableViewCell).textField.text!
-            passTwo[.LEFT_FULLBACK] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 2, section: 1)) as! FDTextFieldTableViewCell).textField.text!
-
-            passOne[.RIGHT_FULLBACK] = (tableView(teamOneTable, cellForRowAt: IndexPath(row: 3, section: 1)) as! FDTextFieldTableViewCell).textField.text!
-            passTwo[.RIGHT_FULLBACK] = (tableView(teamTwoTable, cellForRowAt: IndexPath(row: 3, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passOne[.LEFT_FULLBACK] = (teamOneTable.cellForRow(at: IndexPath(row: 3, section: 1)) as! FDTextFieldTableViewCell).textField.text!
+            passTwo[.LEFT_FULLBACK] = (teamTwoTable.cellForRow(at: IndexPath(row: 3, section: 1)) as! FDTextFieldTableViewCell).textField.text!
 
             vc.teamOneNames = passOne
             vc.teamTwoNames = passTwo
