@@ -325,6 +325,9 @@
                                 <state key="normal" title="Possesion Change">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="redPC:" destination="ext-oe-Kd8" eventType="touchUpInside" id="51C-MI-hiI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj1-vJ-8dF">
                                 <rect key="frame" x="20" y="1266" width="488" height="80"/>
@@ -379,13 +382,16 @@
                                 <state key="normal" title="Possesion Change">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="bluePC:" destination="ext-oe-Kd8" eventType="touchUpInside" id="XVM-ZF-64f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-I6-QlM">
                                 <rect key="frame" x="308" y="826" width="408" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.74901960779999999" green="0.72549019609999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Start/Stop">
+                                <state key="normal" title="Pause/Resume">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -418,7 +424,9 @@
                         <viewLayoutGuide key="safeArea" id="GHZ-Au-lv2"/>
                     </view>
                     <connections>
+                        <outlet property="blueClockLabel" destination="0DG-lg-o5i" id="Fxp-vQ-E4I"/>
                         <outlet property="mainClockLabel" destination="gYP-Xl-QSm" id="Jzi-yW-JN6"/>
+                        <outlet property="redClockLabel" destination="uGq-OS-Hla" id="nPa-cX-MGG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ear-VQ-yQm" userLabel="First Responder" sceneMemberID="firstResponder"/>

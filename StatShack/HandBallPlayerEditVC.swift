@@ -57,7 +57,7 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
                     cell?.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
                 }
             }
-            cell?.textField.text = "Name"
+            cell?.textField.placeholder = "Name"
             cell?.textLabel?.isEnabled = true
             cell?.backgroundColor = UIColor(red: 100, green: 199, blue: 229, alpha: 1)
 
@@ -86,7 +86,7 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
                     cell?.textLabel?.text = "Subsitute  \(indexPath.row - 3)"
                 }
             }
-            cell?.textField.text = "Name"
+            cell?.textField.placeholder = "Name"
             cell?.textLabel?.isEnabled = true
             return cell!
         }
