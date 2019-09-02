@@ -15,6 +15,7 @@
 		8C36C713229E154D00EB1447 /* HandBallPlayerEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C36C712229E154D00EB1447 /* HandBallPlayerEditVC.swift */; };
 		8C5187B8230B9D9C008977C7 /* FDTextFieldTableViewCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C82329F231D7B0E00EB5E3A /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C82329E231D7B0E00EB5E3A /* ResultsVC.swift */; };
+		8C8232A2231D84A900EB5E3A /* StatShack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C8232A0231D84A900EB5E3A /* StatShack.xcdatamodeld */; };
 		8CBDF030228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */; };
 		8CBDF031228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */; };
 		C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97B26902281233E00DC36B2 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		8C36C712229E154D00EB1447 /* HandBallPlayerEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBallPlayerEditVC.swift; sourceTree = "<group>"; };
 		8C5187B5230B9D93008977C7 /* FDTextFieldTableViewCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FDTextFieldTableViewCell.framework; path = StatShack/Assets.xcassets/Carthage/Build/iOS/FDTextFieldTableViewCell.framework; sourceTree = "<group>"; };
 		8C82329E231D7B0E00EB5E3A /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
+		8C8232A1231D84A900EB5E3A /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		8CBDF02E228BA7F000404945 /* Screenshot 2019-05-15 at 9.35.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.35.01 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.35.01 AM.png"; sourceTree = "<group>"; };
 		8CBDF02F228BA7F000404945 /* Screenshot 2019-05-15 at 9.25.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2019-05-15 at 9.25.32 AM.png"; path = "StatShack/Photos/Screenshot 2019-05-15 at 9.25.32 AM.png"; sourceTree = "<group>"; };
 		C97B268D2281233E00DC36B2 /* StatShack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatShack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 		C97B26842281233E00DC36B2 = {
 			isa = PBXGroup;
 			children = (
+				8C8232A0231D84A900EB5E3A /* StatShack.xcdatamodeld */,
 				C97B268F2281233E00DC36B2 /* StatShack */,
 				C97B268E2281233E00DC36B2 /* Products */,
 				603574E72293A41C00127673 /* Screenshot 2019-05-21 at 11.11.52 AM.png */,
@@ -202,6 +205,7 @@
 				8C82329F231D7B0E00EB5E3A /* ResultsVC.swift in Sources */,
 				C97B26932281233E00DC36B2 /* ViewController.swift in Sources */,
 				C97B26A72282990700DC36B2 /* HandballScoreCounterVC.swift in Sources */,
+				8C8232A2231D84A900EB5E3A /* StatShack.xcdatamodeld in Sources */,
 				8C36C713229E154D00EB1447 /* HandBallPlayerEditVC.swift in Sources */,
 				C97B26912281233E00DC36B2 /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +415,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C8232A0231D84A900EB5E3A /* StatShack.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C8232A1231D84A900EB5E3A /* Data.xcdatamodel */,
+			);
+			currentVersion = 8C8232A1231D84A900EB5E3A /* Data.xcdatamodel */;
+			path = StatShack.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C97B26852281233E00DC36B2 /* Project object */;
 }
