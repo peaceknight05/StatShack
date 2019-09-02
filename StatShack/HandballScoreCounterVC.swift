@@ -582,6 +582,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Blue)"]![1] += 1
         }
+        teamOneScore += 1
     }
     
     @objc func shotsScoredRWRed(sender: UIButton!) {
@@ -591,6 +592,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Red)"]![1] += 1
         }
+        teamTwoScore += 1
     }
     
     @objc func passesInterceptedRWBlue(sender: UIButton!) {
@@ -636,6 +638,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Blue)"]![1] += 1
         }
+        teamOneScore += 1
     }
     
     @objc func shotsScoredLWRed(sender: UIButton!) {
@@ -645,6 +648,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Red)"]![1] += 1
         }
+        teamTwoScore += 1
     }
     
     @objc func passesInterceptedLWBlue(sender: UIButton!) {
@@ -690,6 +694,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Blue)"]![1] += 1
         }
+        teamOneScore += 1
     }
     
     @objc func shotsScoredRFRed(sender: UIButton!) {
@@ -699,6 +704,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Red)"]![1] += 1
         }
+        teamTwoScore += 1
     }
     
     @objc func passesInterceptedRFBlue(sender: UIButton!) {
@@ -744,6 +750,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Blue)"]![1] += 1
         }
+        teamOneScore += 1
     }
     
     @objc func shotsScoredLFRed(sender: UIButton!) {
@@ -753,6 +760,7 @@ class HandballScoreCounterVC: UIViewController {
         } else {
             playerStats[name! + " (Red)"]![1] += 1
         }
+        teamTwoScore += 1
     }
     
     @objc func passesInterceptedLFBlue(sender: UIButton!) {
@@ -1190,6 +1198,12 @@ class HandballScoreCounterVC: UIViewController {
             lfRShow = true
 
             return
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ResultsVC {
+            
         }
     }
 }
