@@ -142,7 +142,7 @@ extension HandBallPlayerEditVC {
             vc.teamTwoNames = passTwo
             
             vc.teamOneName = teamOneNameField.text
-            vc.teamtwoName = teamTwoNameField.text
+            vc.teamTwoName = teamTwoNameField.text
         }
     }
 
