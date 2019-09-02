@@ -256,7 +256,9 @@
                         <viewLayoutGuide key="safeArea" id="mHX-LB-KUi"/>
                     </view>
                     <connections>
+                        <outlet property="teamOneNameField" destination="3T7-RQ-Q3c" id="fPe-yR-iQk"/>
                         <outlet property="teamOneTable" destination="QId-zY-bFK" id="X0l-fS-nxn"/>
+                        <outlet property="teamTwoNameField" destination="jfx-Uv-gwg" id="wxD-WG-PAZ"/>
                         <outlet property="teamTwoTable" destination="gt0-s0-t32" id="HMt-DC-8Ki"/>
                     </connections>
                 </viewController>

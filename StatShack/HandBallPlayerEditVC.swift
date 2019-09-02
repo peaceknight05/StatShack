@@ -14,9 +14,13 @@ class HandBallPlayerEditVC: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet var teamOneTable: UITableView!
     @IBOutlet var teamTwoTable: UITableView!
-
+    @IBOutlet weak var teamOneNameField: UITextField!
+    @IBOutlet weak var teamTwoNameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Player Info Edit"
 
         tableSetup()
 
@@ -136,6 +140,9 @@ extension HandBallPlayerEditVC {
 
             vc.teamOneNames = passOne
             vc.teamTwoNames = passTwo
+            
+            vc.teamOneName = teamOneNameField.text
+            vc.teamtwoName = teamTwoNameField.text
         }
     }
 
