@@ -199,7 +199,7 @@ class HandballScoreCounterVC: UIViewController {
         shotsBlockedBGK.setTitle("Shots Blocked", for: .normal)
         shotsBlockedBGK.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
         shotsBlockedBGK.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
-        shotsBlockedBGK.addTarget(self, action: #selector(shotsCaughtBlue(sender:)), for: .touchUpInside)
+        shotsBlockedBGK.addTarget(self, action: #selector(shotsBlockedBlue(sender:)), for: .touchUpInside)
         viewBGK.addSubview(shotsBlockedBGK)
 
         viewRGKRect = CGRect(x: 20, y: 80, width: 984, height: 660)
