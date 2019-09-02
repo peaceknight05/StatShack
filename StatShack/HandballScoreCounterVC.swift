@@ -1249,6 +1249,9 @@ class HandballScoreCounterVC: UIViewController {
             vc.playerStats = playerStats
             vc.teamOneName = teamOneName
             vc.teamTwoName = teamTwoName
+            vc.totalGameTime = elapsedTime
+            vc.teamOnePossesion = elapsedTimeB
+            vc.teamTwoPossesion = elapsedTimeR
         }
     }
 }
