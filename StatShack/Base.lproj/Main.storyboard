@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2019-05-17 at 11.57.57 AM.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAr-qV-e0o">
-                                <rect key="frame" x="0.0" y="70" width="1024" height="428"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screenshot 2019-05-17 at 11.57.57 AM.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAr-qV-e0o">
+                                <rect key="frame" x="0.0" y="70" width="1024" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                             </imageView>
@@ -45,7 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCH-3w-ote">
-                                <rect key="frame" x="206" y="710" width="613" height="252"/>
+                                <rect key="frame" x="206" y="709" width="613" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="70"/>
@@ -121,8 +121,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2019-05-17 at 11.58.05 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-XU-bJP">
-                                <rect key="frame" x="0.0" y="70" width="1024" height="594"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screenshot 2019-05-17 at 11.58.05 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-XU-bJP">
+                                <rect key="frame" x="0.0" y="131" width="1024" height="533"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="594" id="BuV-kq-U9w"/>
                                 </constraints>
@@ -218,13 +218,13 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-Rg-8MN">
                                 <rect key="frame" x="431" y="1270" width="163" height="57"/>
-                                <color key="backgroundColor" red="0.74901960784313726" green="0.72549019607843135" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.51386392120000002" green="0.75042098759999998" blue="0.7580042481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start Game">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.391180203" green="0.14792022890000001" blue="0.20004286909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ext-oe-Kd8" kind="show" id="yqX-ZL-8Ee"/>
+                                    <segue destination="ext-oe-Kd8" kind="show" id="0uy-3o-R2j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -419,7 +419,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-I6-QlM">
                                 <rect key="frame" x="308" y="826" width="408" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.74901960779999999" green="0.72549019609999998" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.51386392120000002" green="0.75042098759999998" blue="0.7580042481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Pause/Resume">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
