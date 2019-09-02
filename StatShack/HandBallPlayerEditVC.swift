@@ -141,8 +141,16 @@ extension HandBallPlayerEditVC {
             vc.teamOneNames = passOne
             vc.teamTwoNames = passTwo
             
-            vc.teamOneName = teamOneNameField.text
-            vc.teamTwoName = teamTwoNameField.text
+            if teamOneNameField.text != "" {
+                vc.teamOneName = teamOneNameField.text
+            } else {
+                vc.teamOneName = nil
+            }
+            if teamTwoNameField.text != "" {
+                vc.teamTwoName = teamTwoNameField.text
+            } else {
+                vc.teamTwoName = nil
+            }
         }
     }
 
