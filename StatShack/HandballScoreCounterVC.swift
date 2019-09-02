@@ -158,6 +158,38 @@ class HandballScoreCounterVC: UIViewController {
             rlfb.setTitle(teamTwoNames![.LEFT_FULLBACK]!, for: .normal)
         }
 
+        for name in teamOneNames! {
+            if name.key == .GOALKEEPER {
+                if name.value == "" {
+                    goalieStats["GK (Blue)"] = [0, 0, 0]
+                } else {
+                    goalieStats["\(name.value) (Blue)"] = [0, 0, 0]
+                }
+            } else {
+                if name.value == "" {
+                    playerStats["\(name.key.toShort()) (Blue)"] = [0, 0, 0]
+                } else {
+                    playerStats["\(name.value) (Blue)"] = [0, 0, 0]
+                }
+            }
+        }
+
+        for name in teamTwoNames! {
+            if name.key == .GOALKEEPER {
+                if name.value == "" {
+                    goalieStats["GK (Red)"] = [0, 0, 0]
+                } else {
+                    goalieStats["\(name.value) (Red)"] = [0, 0, 0]
+                }
+            } else {
+                if name.value == "" {
+                    playerStats["\(name.key.toShort()) (Red)"] = [0, 0, 0]
+                } else {
+                    playerStats["\(name.value) (Red)"] = [0, 0, 0]
+                }
+            }
+        }
+
         bgkb.tag = 0
         rgkb.tag = 1
 
@@ -1215,8 +1247,8 @@ class HandballScoreCounterVC: UIViewController {
             vc.teamTwoScore = teamTwoScore
             vc.goalieStats = goalieStats
             vc.playerStats = playerStats
-            vc.teamOneName = self.teamOneName
-            vc.teamTwoName = self.teamTwoName
+            vc.teamOneName = teamOneName
+            vc.teamTwoName = teamTwoName
         }
     }
 }
@@ -1227,6 +1259,21 @@ enum Positions {
     case RIGHT_WINGER
     case LEFT_FULLBACK
     case RIGHT_FULLBACK
+    
+    func toShort() -> String {
+        switch(self) {
+        case .GOALKEEPER:
+            return "GK"
+        case .LEFT_WINGER:
+            return "LW"
+        case .RIGHT_WINGER:
+            return "RW"
+        case .LEFT_FULLBACK:
+            return "LF"
+        case .RIGHT_FULLBACK:
+            return "RF"
+        }
+    }
 }
 
 enum Possesion {
