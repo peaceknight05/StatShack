@@ -242,6 +242,27 @@ class HandballScoreCounterVC: UIViewController {
         titleBRW.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleBRW.textAlignment = .center
         viewBRW.addSubview(titleBRW)
+        
+        shotsAttemptedBRW = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedBRW.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedBRW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedBRW.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsAttemptedBRW.addTarget(self, action: #selector(shotsAttemptedRWBlue(sender:)), for: .touchUpInside)
+        viewBRW.addSubview(shotsAttemptedBRW)
+        
+        shotsScoredBRW = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredBRW.setTitle("Shots Scored", for: .normal)
+        shotsScoredBRW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredBRW.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsScoredBRW.addTarget(self, action: #selector(shotsScoredRWBlue(sender:)), for: .touchUpInside)
+        viewBRW.addSubview(shotsScoredBRW)
+        
+        passesInterceptedBRW = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedBRW.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedBRW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedBRW.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        passesInterceptedBRW.addTarget(self, action: #selector(passesInterceptedRWBlue(sender:)), for: .touchUpInside)
+        viewBRW.addSubview(passesInterceptedBRW)
 
         viewRRWRect = CGRect(x: 20, y: 80, width: 984, height: 660)
         viewRRW = UIView(frame: viewRGKRect)
@@ -251,6 +272,27 @@ class HandballScoreCounterVC: UIViewController {
         titleRRW.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleRRW.textAlignment = .center
         viewRRW.addSubview(titleRRW)
+        
+        shotsAttemptedRRW = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedRRW.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedRRW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedRRW.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsAttemptedRRW.addTarget(self, action: #selector(shotsAttemptedRWRed(sender:)), for: .touchUpInside)
+        viewRRW.addSubview(shotsAttemptedRRW)
+        
+        shotsScoredRRW = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredRRW.setTitle("Shots Scored", for: .normal)
+        shotsScoredRRW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredRRW.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsScoredRRW.addTarget(self, action: #selector(shotsScoredRWRed(sender:)), for: .touchUpInside)
+        viewRRW.addSubview(shotsScoredRRW)
+        
+        passesInterceptedRRW = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedRRW.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedRRW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedRRW.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        passesInterceptedRRW.addTarget(self, action: #selector(passesInterceptedRWRed(sender:)), for: .touchUpInside)
+        viewRRW.addSubview(passesInterceptedRRW)
 
         viewBLWRect = CGRect(x: 20, y: 80, width: 984, height: 660)
         viewBLW = UIView(frame: viewBGKRect)
@@ -261,6 +303,27 @@ class HandballScoreCounterVC: UIViewController {
         titleBLW.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleBLW.textAlignment = .center
         viewBLW.addSubview(titleBLW)
+        
+        shotsAttemptedBLW = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedBLW.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedBLW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedBLW.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsAttemptedBLW.addTarget(self, action: #selector(shotsAttemptedLWBlue(sender:)), for: .touchUpInside)
+        viewBLW.addSubview(shotsAttemptedBLW)
+        
+        shotsScoredBLW = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredBLW.setTitle("Shots Scored", for: .normal)
+        shotsScoredBLW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredBLW.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsScoredBLW.addTarget(self, action: #selector(shotsScoredLWBlue(sender:)), for: .touchUpInside)
+        viewBLW.addSubview(shotsScoredBLW)
+        
+        passesInterceptedBLW = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedBLW.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedBLW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedBLW.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        passesInterceptedBLW.addTarget(self, action: #selector(passesInterceptedLWBlue(sender:)), for: .touchUpInside)
+        viewBLW.addSubview(passesInterceptedBLW)
 
         viewRLWRect = CGRect(x: 20, y: 80, width: 984, height: 660)
         viewRLW = UIView(frame: viewRGKRect)
@@ -271,6 +334,27 @@ class HandballScoreCounterVC: UIViewController {
         titleRLW.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleRLW.textAlignment = .center
         viewRLW.addSubview(titleRLW)
+        
+        shotsAttemptedRLW = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedRLW.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedRLW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedRLW.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsAttemptedRLW.addTarget(self, action: #selector(shotsAttemptedLWRed(sender:)), for: .touchUpInside)
+        viewRLW.addSubview(shotsAttemptedRLW)
+        
+        shotsScoredRLW = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredRLW.setTitle("Shots Scored", for: .normal)
+        shotsScoredRLW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredRLW.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsScoredRLW.addTarget(self, action: #selector(shotsScoredLWRed(sender:)), for: .touchUpInside)
+        viewRLW.addSubview(shotsScoredRLW)
+        
+        passesInterceptedRLW = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedRLW.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedRLW.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedRLW.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        passesInterceptedRLW.addTarget(self, action: #selector(passesInterceptedLWRed(sender:)), for: .touchUpInside)
+        viewRLW.addSubview(passesInterceptedRLW)
 
         viewBRFRect = CGRect(x: 20, y: 80, width: 984, height: 660)
         viewBRF = UIView(frame: viewBGKRect)
@@ -281,6 +365,27 @@ class HandballScoreCounterVC: UIViewController {
         titleBRF.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleBRF.textAlignment = .center
         viewBRF.addSubview(titleBRF)
+        
+        shotsAttemptedBRF = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedBRF.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedBRF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedBRF.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsAttemptedBRF.addTarget(self, action: #selector(shotsAttemptedRFBlue(sender:)), for: .touchUpInside)
+        viewBRF.addSubview(shotsAttemptedBRF)
+        
+        shotsScoredBRF = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredBRF.setTitle("Shots Scored", for: .normal)
+        shotsScoredBRF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredBRF.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsScoredBRF.addTarget(self, action: #selector(shotsScoredRFBlue(sender:)), for: .touchUpInside)
+        viewBRF.addSubview(shotsScoredBRF)
+        
+        passesInterceptedBRF = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedBRF.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedBRF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedBRF.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        passesInterceptedBRF.addTarget(self, action: #selector(passesInterceptedRFBlue(sender:)), for: .touchUpInside)
+        viewBRF.addSubview(passesInterceptedBRF)
 
         viewRRFRect = CGRect(x: 20, y: 80, width: 984, height: 660)
         viewRRF = UIView(frame: viewRGKRect)
@@ -291,6 +396,27 @@ class HandballScoreCounterVC: UIViewController {
         titleRRF.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleRRF.textAlignment = .center
         viewRRF.addSubview(titleRRF)
+        
+        shotsAttemptedRRF = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedRRF.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedRRF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedRRF.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsAttemptedRRF.addTarget(self, action: #selector(shotsAttemptedRFRed(sender:)), for: .touchUpInside)
+        viewRRF.addSubview(shotsAttemptedRRF)
+        
+        shotsScoredRRF = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredRRF.setTitle("Shots Scored", for: .normal)
+        shotsScoredRRF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredRRF.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsScoredRRF.addTarget(self, action: #selector(shotsScoredRFRed(sender:)), for: .touchUpInside)
+        viewRRF.addSubview(shotsScoredRRF)
+        
+        passesInterceptedRRF = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedRRF.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedRRF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedRRF.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        passesInterceptedRRF.addTarget(self, action: #selector(passesInterceptedRFRed(sender:)), for: .touchUpInside)
+        viewRRF.addSubview(passesInterceptedRRF)
 
         viewBLFRect = CGRect(x: 20, y: 80, width: 984, height: 660)
         viewBLF = UIView(frame: viewBGKRect)
@@ -301,6 +427,27 @@ class HandballScoreCounterVC: UIViewController {
         titleBLF.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleBLF.textAlignment = .center
         viewBLF.addSubview(titleBLF)
+        
+        shotsAttemptedBLF = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedBLF.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedBLF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedBLF.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsAttemptedBLF.addTarget(self, action: #selector(shotsAttemptedLFBlue(sender:)), for: .touchUpInside)
+        viewBLF.addSubview(shotsAttemptedBLF)
+        
+        shotsScoredBLF = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredBLF.setTitle("Shots Scored", for: .normal)
+        shotsScoredBLF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredBLF.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        shotsScoredBLF.addTarget(self, action: #selector(shotsScoredLFBlue(sender:)), for: .touchUpInside)
+        viewBLF.addSubview(shotsScoredBLF)
+        
+        passesInterceptedBLF = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedBLF.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedBLF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedBLF.backgroundColor = UIColor(red: 0.64, green: 0.90, blue: 1.0, alpha: 1.0)
+        passesInterceptedBLF.addTarget(self, action: #selector(passesInterceptedLFBlue(sender:)), for: .touchUpInside)
+        viewBLF.addSubview(passesInterceptedBLF)
 
         viewRLFRect = CGRect(x: 20, y: 80, width: 984, height: 660)
         viewRLF = UIView(frame: viewRGKRect)
@@ -311,6 +458,27 @@ class HandballScoreCounterVC: UIViewController {
         titleRLF.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 35), size: 35)
         titleRLF.textAlignment = .center
         viewRLF.addSubview(titleRLF)
+        
+        shotsAttemptedRLF = UIButton(frame: CGRect(x: 20, y: 100, width: 944, height: 100))
+        shotsAttemptedRLF.setTitle("Shots Attempted", for: .normal)
+        shotsAttemptedRLF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsAttemptedRLF.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsAttemptedRLF.addTarget(self, action: #selector(shotsAttemptedLFRed(sender:)), for: .touchUpInside)
+        viewRLF.addSubview(shotsAttemptedRLF)
+        
+        shotsScoredRLF = UIButton(frame: CGRect(x: 20, y: 240, width: 944, height: 100))
+        shotsScoredRLF.setTitle("Shots Scored", for: .normal)
+        shotsScoredRLF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        shotsScoredRLF.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        shotsScoredRLF.addTarget(self, action: #selector(shotsScoredLFRed(sender:)), for: .touchUpInside)
+        viewRLF.addSubview(shotsScoredRLF)
+        
+        passesInterceptedRLF = UIButton(frame: CGRect(x: 20, y: 380, width: 944, height: 100))
+        passesInterceptedRLF.setTitle("Passes Intercepted", for: .normal)
+        passesInterceptedRLF.titleLabel?.font = UIFont(descriptor: UIFontDescriptor(name: "System", size: 30), size: 30)
+        passesInterceptedRLF.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.85, alpha: 1.0)
+        passesInterceptedRLF.addTarget(self, action: #selector(passesInterceptedRFRed(sender:)), for: .touchUpInside)
+        viewRLF.addSubview(passesInterceptedRLF)
 
         viewBGK.isHidden = true
         viewRGK.isHidden = true
@@ -425,7 +593,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedRWBlue(sender: UIButton!) {
+    @objc func passesInterceptedRWBlue(sender: UIButton!) {
         let name = brwb.titleLabel?.text!
         if playerStats[name! + " (Blue)"] == nil {
             playerStats[name! + " (Blue)"] = [0, 0, 1]
@@ -434,7 +602,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedRWRed(sender: UIButton!) {
+    @objc func passesInterceptedRWRed(sender: UIButton!) {
         let name = rrwb.titleLabel?.text!
         if playerStats[name! + " (Red)"] == nil {
             playerStats[name! + " (Red)"] = [0, 0, 1]
@@ -479,7 +647,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedLWBlue(sender: UIButton!) {
+    @objc func passesInterceptedLWBlue(sender: UIButton!) {
         let name = blwb.titleLabel?.text!
         if playerStats[name! + " (Blue)"] == nil {
             playerStats[name! + " (Blue)"] = [0, 0, 1]
@@ -488,7 +656,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedLWRed(sender: UIButton!) {
+    @objc func passesInterceptedLWRed(sender: UIButton!) {
         let name = rlwb.titleLabel?.text!
         if playerStats[name! + " (Red)"] == nil {
             playerStats[name! + " (Red)"] = [0, 0, 1]
@@ -533,7 +701,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedRFBlue(sender: UIButton!) {
+    @objc func passesInterceptedRFBlue(sender: UIButton!) {
         let name = brfb.titleLabel?.text!
         if playerStats[name! + " (Blue)"] == nil {
             playerStats[name! + " (Blue)"] = [0, 0, 1]
@@ -542,7 +710,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedRFRed(sender: UIButton!) {
+    @objc func passesInterceptedRFRed(sender: UIButton!) {
         let name = rrfb.titleLabel?.text!
         if playerStats[name! + " (Red)"] == nil {
             playerStats[name! + " (Red)"] = [0, 0, 1]
@@ -587,7 +755,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedLFBlue(sender: UIButton!) {
+    @objc func passesInterceptedLFBlue(sender: UIButton!) {
         let name = blfb.titleLabel?.text!
         if playerStats[name! + " (Blue)"] == nil {
             playerStats[name! + " (Blue)"] = [0, 0, 1]
@@ -596,7 +764,7 @@ class HandballScoreCounterVC: UIViewController {
         }
     }
     
-    @objc func passessInterceptedLFRed(sender: UIButton!) {
+    @objc func passesInterceptedLFRed(sender: UIButton!) {
         let name = rlfb.titleLabel?.text!
         if playerStats[name! + " (Red)"] == nil {
             playerStats[name! + " (Red)"] = [0, 0, 1]
