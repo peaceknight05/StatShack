@@ -583,6 +583,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Blue)"]![1] += 1
         }
         teamOneScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func shotsScoredRWRed(sender: UIButton!) {
@@ -593,6 +594,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Red)"]![1] += 1
         }
         teamTwoScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func passesInterceptedRWBlue(sender: UIButton!) {
@@ -639,6 +641,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Blue)"]![1] += 1
         }
         teamOneScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func shotsScoredLWRed(sender: UIButton!) {
@@ -649,6 +652,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Red)"]![1] += 1
         }
         teamTwoScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func passesInterceptedLWBlue(sender: UIButton!) {
@@ -695,6 +699,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Blue)"]![1] += 1
         }
         teamOneScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func shotsScoredRFRed(sender: UIButton!) {
@@ -705,6 +710,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Red)"]![1] += 1
         }
         teamTwoScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func passesInterceptedRFBlue(sender: UIButton!) {
@@ -751,6 +757,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Blue)"]![1] += 1
         }
         teamOneScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func shotsScoredLFRed(sender: UIButton!) {
@@ -761,6 +768,7 @@ class HandballScoreCounterVC: UIViewController {
             playerStats[name! + " (Red)"]![1] += 1
         }
         teamTwoScore += 1
+        title = "\(teamOneScore):\(teamTwoScore)"
     }
     
     @objc func passesInterceptedLFBlue(sender: UIButton!) {
@@ -1203,7 +1211,10 @@ class HandballScoreCounterVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? ResultsVC {
-            
+            vc.teamOneScore = self.teamOneScore
+            vc.teamTwoScore = self.teamTwoScore
+            vc.goalieStats = self.goalieStats
+            vc.playerStats = self.playerStats
         }
     }
 }
